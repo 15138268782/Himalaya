@@ -1013,7 +1013,5 @@ class XMLYCheckIn:
 
 
 if __name__ == "__main__":
-    with open("himalaya_cookie.json", "r", encoding="utf-8") as f:
-        datas = json.loads(f.read())
     _xmly_cookie_list = os.environ['COOKIE']
     XMLYCheckIn(xmly_cookie_list=_xmly_cookie_list).main()
