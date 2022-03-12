@@ -26,6 +26,7 @@ jobs:
             - name: "运行 喜马拉雅签到"
               run: python3 himalaya_app_speed.py
               env:
+                  COOKIE: ${{ secrets.COOKIE }}
                   BILI_USER: ${{ secrets.BILI_USER }}
                   BILI_PASS: ${{ secrets.BILI_PASS }}
                   BILI_COOKIE: ${{ secrets.BILI_COOKIE }}
