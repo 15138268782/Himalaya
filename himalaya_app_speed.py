@@ -25,7 +25,7 @@ import requests
 import rsa
 
     _xmly_cookie_list = os.environ['COOKIE']
-    XMLYCheckIn(xmly_cookie_list=_xmly_cookie_list).main()
+      XMLYCheckIn(xmly_cookie_list=_xmly_cookie_list).main()
     
 
 class XMLYCheckIn:
