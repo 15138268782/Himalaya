@@ -23,8 +23,7 @@ from itertools import groupby
 import requests
 
 import rsa
-    _xmly_cookie_list = os.environ['COOKIE']
-    XMLYCheckIn(xmly_cookie_list=_xmly_cookie_list).main()
+    _xmly_cookie_list = os.environ['COOKIE']    XMLYCheckIn(xmly_cookie_list=_xmly_cookie_list).main()
 
 class XMLYCheckIn:
     def __init__(self, xmly_cookie_list):
