@@ -979,7 +979,7 @@ class XMLYCheckIn:
         msg_list = []
         mins, date_stamp, _datatime, utc_time = self.get_time()
         for xmly_cookie in self.xmly_cookie_list:
-            xmly_cookie = xmly_cookie.get("cookie")
+            xmly_cookie = os.environ['COOKIE']
             cookies = self.parse_cookie(xmly_cookie)
             device_model = cookies.get("device_model", "未获取到设备信息")
             listen_msg = self.save_listen_time(cookies, date_stamp)
