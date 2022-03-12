@@ -12,6 +12,7 @@ new Env('喜马拉雅极速版签到');
 '''
 
 import base64
+import os
 import hashlib
 import json
 import re
